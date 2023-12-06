@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: "Mali", cursive;
+  background-color: #e1f5fe;
+}
+
+.logo {
+  font-size: 5.5rem;
+  position: fixed;
+  z-index: 10;
+  top: 29%;
+  right: 2%;
+  text-transform: uppercase;
+  color: #fdd835;
+  text-shadow: 1px 4px 10px black;
+  -webkit-text-stroke: 0.6rem black;
+}
+
+.container {
+  width: 1200%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.line-intro {
+  background-color: black;
+  height: 0.5rem;
+  top: 50.1%;
+  right: 0;
+  width: 55%;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+}
+
+.snoopy-intro {
+  width: 30rem;
+  position: absolute;
+  top: 37%;
+  left: 27.4%;
+  z-index: -1;
+}
+
+.grass-intro {
+  width: 165rem;
+  position: absolute;
+  bottom: -6rem;
+  right: 0;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.block {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.backdrop {
+  background-color: white;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.snoopy .block {
+  background-color: #ef9a9a;
+}
+
+.charlie-brown .block {
+  background-color: #ffecb3;
+}
+
+.lucy .block {
+  background-color: #b3e5fc;
+}
+
+.linus .block {
+  background-color: #ffccbc;
+}
+
+.sally .block {
+  background-color: #fce4ec;
+}
+
+.schroeder .block {
+  background-color: #bbdefb;
+}
+
+.pigpen .block {
+  background-color: #dcedc8;
+}
+
+.flanklin .block {
+  background-color: #d7ccc8;
+}
+
+.peppermint-patty .block {
+  background-color: #c8e6c9;
+}
+
+.marcie .block {
+  background-color: #fff3e0;
+}
+
+.woodstock .block {
+  background-color: #fff9c4;
+}
+
+.description {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  width: 30%;
+  transform: translate(100%, 100%);
+}
+
+.character img {
+  position: relative;
+  z-index: 10;
+  height: 40vh;
+  width: auto;
+  transform: translateY(-180%);
+}
+
+.name {
+  font-size: 6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: #424242;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(450%);
+}
+
+.appearance {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  text-align: right;
+  transform: translateY(-250%);
+}
+
+.appearance span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quote {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  width: 30%;
+  text-align: right;
+  transform: translateY(200%);
+}
